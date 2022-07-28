@@ -14,11 +14,11 @@ const assertArrayEquals = function(arr1, arr2) {
 const assertEqual = function(actual, expected) {
 
   if (actual !== expected) {
-    //console.log(`Asserion Failed: ${actual} !== ${expected}`);
+    console.log(`Asserion Failed: ${actual} !== ${expected}`);
     return false;
     process.exit();
   } else {
-    //console.log(`Assertion Passed: ${actual} === ${expected}`);
+    console.log(`Assertion Passed: ${actual} === ${expected}`);
     return true;
     process.exit();
   }
