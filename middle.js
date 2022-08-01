@@ -21,50 +21,8 @@ const middle = (arr) => {
   return result;
 }
 
-const assertArrayEquals = function(arr1, arr2) {
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
+module.exports = middle;
 
-  for (let i = 0; i < arr1.length; i++) {
-    if (assertEqual(arr1[i], arr2[i]) === false) {
-      return false;
-    }
-  }
-  return true;
-};
 
-const assertEqual = function(actual, expected) {
 
-  if (actual !== expected) {
-    //console.log(`Asserion Failed: ${actual} !== ${expected}`);
-    return false;
-    process.exit();
-  } else {
-    //console.log(`Assertion Passed: ${actual} === ${expected}`);
-    return true;
-    process.exit();
-  }
-};
 
-const eqArrays = function(arr1,arr2) {
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
-
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  }
-  return true;
-};
-
-console.log(middle([1]))
-console.log(middle([1, 2]))
-console.log(middle([1, 2, 3]))
-console.log(middle([1, 2, 3, 4, 5]) )
-console.log(middle([1, 2, 3, 4]));
-console.log(middle([1, 2, 3, 4, 5, 6]) );
-
-console.log(assertArrayEquals(middle([1, 2, 3]),[2]))
