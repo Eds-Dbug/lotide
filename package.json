@@ -1,6 +1,6 @@
 {
   "name": "@teetime/lotide",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Lotide utility library for assertions and testing",
   "main": "assertArrayEqual.js",
   "directories": {
